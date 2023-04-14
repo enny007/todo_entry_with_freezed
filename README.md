@@ -1,6 +1,7 @@
 # ddd_riverpod
 
-A new Flutter project.
+A simple todo entry showcasing freezed for state classes and riverpod for state management
+
 
 ## Getting Started
 
