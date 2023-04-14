@@ -9,12 +9,12 @@ class TodoNotifier extends StateNotifier<TodoState> {
 
   final uuid = const Uuid();
 
-  mapEventsToStates(TodoEvent event) async {
+  mapEventsToStates(TodoEvent event) {
     return event.map(
       addTodo: (addTodoEvent) {
         final List<TodoModel> todoList = [...state.todoList];
         todoList.add(
-          TodoModel(
+          TodoModel(          
             id: uuid.v1(),
             title: state.todo.title,
             isTodoCompleted: false,
